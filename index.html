@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="./js/main.js"></script>
+    <title>Mohanish Chavan</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <div class="container px-5">
+            <a href="" class="navbar-brand">
+                <img src="images/Logo.svg" alt="" width="150" style="margin: -30%;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navmenu">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset text-right" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body text-center">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link"><span>About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link"><span>Experience</span></a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="#skillstart" class="nav-link"><span>Work</span></a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#interests" class="nav-link"><span>Interests</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link"><span>Contact</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#resume" class="btn ms-md-2 ms-lg-5 mt-5 mt-md-0">
+                                <b>Résumé</b>
+                                <i class="bi bi-file-earmark-person-fill ps-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-light p-5 p-lg-0 text-center text-sm-start mt-5 mt-lg-none" id="showcase">
+        <div class="container px-lg-5">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <p>Hi, my name is</p>
+                    <h1 class="p-3 p-md-0">Mohanish Chavan</h1>
+                    <h3><span id="typewriter"></span><span id="blinker">|</span></h3>
+                    <!-- <p class="my-4">
+                        I'm a Computer Science Student with specialization in Web-Development. Currently, I'm learning
+                        the fundamentals of Data Science with IBM's Watson Studio toolkit and Jupyter Notebooks.
+                    </p> -->
+                    <a href="mailto:beingmohanish15@gmail.com" class="btn btn-lg mt-5">
+                        <b>Get in touch</b>
+                        <i class="bi bi-arrow-right-circle-fill ps-1"></i>
+                    </a>
+                </div>
+                <img src="images/showcase.svg" alt="" class="img-fluid ms-5 d-none d-sm-block" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me. -->
+    <section class="bg-light text-center text-md-start" id="about">
+        <div class="container px-lg-5">
+            <div class="row">
+                <div class="col-md-5 pe-md-5 d-md-flex flex-column justify-content-center">
+                    <img src="./images/My pic.jpg" alt="" class="img-fluid mx-lg-5">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="pt-5 heading"><span>About Me.</span></h1>
+                    <p class="py-3" id="about-info">I'm a software professional determined to innovate tools for making
+                        the world a
+                        better place.
+                        I aim to deliver scalable applications and hence, insist over writing
+                        sleek & efficient code while agreeing on code-maintenance.
+
+                        I am currently pursuing an undergrad degree with a major in Computer Science at the Indian
+                        Institute
+                        of Information Technology. Apart from building software, I like to play football, read books,
+                        and explore the world!
+
+                        <!-- I am an Open Source enthusiast with contributions to orgs. like Kiwix and Openzim, and I was
+                        part of GSOC 2021 under kiwix -->
+                    </p>
+
+
+                    <div class="skillset">
+                        <div class="skill skill-1">
+                            <p>C | C++<span style="float: right;">95%</span></p>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="skill skill-2">
+                            <p>HTML5 | CSS <span style="float: right;">85%</span></p>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="skill skill-3">
+                            <p>Javascript | JQuery <span style="float: right;">65%</span></p>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="skill skill-4">
+                            <p>Bootstrap <span style="float: right;">80%</span></p>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="skill skill-5">
+                            <p>PHP | MYSQL <span style="float: right;">85%</span></p>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="skill skill-6">
+                            <p>Python | Flask <span style="float: right;">75%</span></p>
+                        </div>
+                    </div>
+                    <!-- <div class="skillset">
+                        <div class="skill skill-7">
+                            <p>Node | React <span style="float: right;">60%</span></p>
+                        </div>
+                    </div>
+                    <div class="skillset">
+                        <div class="skill skill-8">
+                            <p>Git | Open Source <span style="float: right;">70%</span></p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="bg-light py-5" id="interests">
+        <div class="container px-lg-5">
+            <h1 class="text-center p-5 heading">
+                <span>Interests</span>
+            </h1>
+            <div class="row text-center g-5">
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <div class="card-body text-center">
+                            <img src="images/Computer Vision.svg" alt="" class="card-img">
+                            <h4 class="card-title mt-4">
+                                Computer Vision & AR
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <div class="card-body text-center">
+                            <img src="images/Block Chain.svg" alt="" class="card-img">
+                        </div>
+                        <h4 class="card-title mb-3">
+                            Blockchain & Cryptography
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <div class="card-body text-center">
+                            <img src="images/Open source.svg" alt="" class="card-img">
+                        </div>
+                        <h4 class="card-title my-4">
+                            Open Source Contribution
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <div class="card-body text-center">
+                            <img src="images/AI.svg" alt="" class="card-img py-lg-5">
+                            <h4 class="card-title mt-3 mt-lg-0">
+                                Neural Networks & AI
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <div class="card-body text-center">
+                            <img src="images/cyber security.svg" alt="" class="card-img">
+                        </div>
+                        <h4 class="card-title mb-3">
+                            Cyber Security
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-dark">
+                        <div class="card-body text-center">
+                            <img src="images/cloud computing.svg" alt="" class="card-img">
+                        </div>
+                        <h4 class="card-title mb-3">
+                            Cloud Computing
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-lg-5">
+            <h1 class="text-center p-4 heading">
+                <span>Get in Touch</span>
+            </h1>
+            <p>
+                I am constantly exploring opportunities and interships in industry to learn and excel in real world
+                environment.<br class="d-lg-none"><br class="d-lg-none">
+                I am willing to put my hands on in all different tech stacks like Web Development, App
+                Development, Machine Learning & AI, Blockchain and Dev-Ops.
+                <br><br> Apart from that, my inbox is open to any kind of queries.
+                <br> Just go forward and drop a mail.
+                <br><br>
+                <a href="mailto:beingmohanish15@gmail.com" class="btn btn-lg my-3">
+                    <b>Connect</b>
+                    <i class="bi bi-person-lines-fill ps-1"></i>
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-2">
+        <div class="container">
+            <div class="d-lg-none pb-2 lead d-flex justify-content-center">
+                <a class="nav-link m-0" href="https://github.com/mohanishdc7" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a class="nav-link m-0" href="https://www.instagram.com/mohanish_dc7/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a class="nav-link m-0" href="https://twitter.com/mohanish_dc7" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                <a class="nav-link m-0" href="https://www.linkedin.com/in/mohanish-chavan/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a class="nav-link m-0" href="https://www.facebook.com/mohanish.chavan.18/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+            <p class="text-center text-secondary">
+                Designed & Built by Mohanish Chavan
+            </p>
+        </div>
+    </footer>
+
+    <!-- Social Links -->
+    <div class="d-none d-lg-block" id="social">
+        <ul class="nav fixed-bottom lead pb-3" style="width: 10px;">
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/mohanishdc7" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/mohanish_dc7/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/mohanish_dc7" target="_blank">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/mohanish-chavan/" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/mohanish.chavan.18/" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

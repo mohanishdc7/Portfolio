@@ -1,0 +1,277 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* ----------main----------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  outline: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  translate: middle;
+}
+
+@media (min-width: 768px) {
+  section {
+    height: 90vh;
+  }
+
+  #interests {
+    height: auto;
+  }
+}
+
+h1::selection {
+  background-color: #5e19e4;
+  color: white;
+}
+
+/* .heading span{
+  position: relative;
+  border-bottom: 10px;
+}
+
+.heading span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #5e19e4;
+  height: 3px;
+} */
+
+/* -----------navbar------------ */
+.offcanvas-body span {
+  position: relative;
+  padding: 5px 0;
+}
+
+.offcanvas-body span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #5e19e4;
+  height: 3px;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+.offcanvas-body span:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .offcanvas {
+    background-image: linear-gradient(
+      to bottom,
+      #e0d1ff,
+      #cab0fd,
+      #a97ffc,
+      #8147f7
+    );
+  }
+
+  .offcanvas-body a {
+    margin: 15px;
+    font-size: 1.5rem;
+  }
+
+  .offcanvas-body span::before {
+    background-color: white;
+  }
+
+  #showcase .container {
+    margin: 25% 0;
+  }
+}
+
+/* -----------showcase-------------- */
+#showcase img {
+  width: 40%;
+}
+
+#showcase h1 {
+  font-size: 3rem;
+}
+
+#typewriter {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid #5e19e4;
+}
+
+#blinker {
+  color: #5e19e4;
+}
+
+.btn {
+  background-color: #5e19e4;
+  color: whitesmoke;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  box-shadow: 1px 0px 5px 0px rgba(51, 1, 80, 0.68);
+  color: #5e19e4;
+  transition: 0.3s;
+}
+
+/* -----------about-------------- */
+#about img {
+  box-shadow: 5px 0px 25px 0px rgba(51, 1, 80, 0.68);
+}
+
+.skillset {
+  background-color: rgb(202, 200, 200);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  height: 25px;
+  width: 100%;
+  margin: 15px 0;
+  box-shadow: -104px 38px 368px -35px rgba(0, 0, 0, 0.7) inset;
+}
+
+.skill {
+  overflow: hidden;
+  border-radius: 50px;
+  background-color: #5e19e4;
+  height: 25px;
+  width: 0;
+}
+
+.skill-1 {
+  animation: load1 3s normal forwards;
+}
+.skill-2 {
+  animation: load2 3s normal forwards;
+}
+.skill-3 {
+  animation: load3 3s normal forwards;
+}
+.skill-4 {
+  animation: load4 3s normal forwards;
+}
+.skill-5 {
+  animation: load5 3s normal forwards;
+}
+.skill-6 {
+  animation: load6 3s normal forwards;
+}
+.skill-7 {
+  animation: load7 3s normal forwards;
+}
+.skill-8 {
+  animation: load8 3s normal forwards;
+}
+
+.skillset p {
+  outline: none;
+  text-align: left;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: 1px 10px;
+}
+
+@keyframes load1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95%;
+  }
+}
+@keyframes load2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes load3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes load4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes load5 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes load6 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes load7 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 55%;
+  }
+}
+@keyframes load8 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+/* -----------interests-------------- */
+.card {
+  box-shadow: 5px 5px 25px 1px rgba(206, 206, 206, 0.68);
+}
+
+#contact p {
+  margin: 0 20%;
+  text-align: center;
+}
+
+/* -----------Social links-------------- */
+#social .nav-link,
+.footer .nav-link {
+  color: #5e19e4;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+#social .nav-link:hover,
+.footer .nav-link:hover {
+  border-radius: 50%;
+  box-shadow: 1px 0px 5px 0px rgba(51, 1, 80, 0.68);
+  color: #ffffff;
+  background-color: #5e19e4;
+  transition: 0.3s;
+}
