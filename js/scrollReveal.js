@@ -17,8 +17,8 @@ $(document).ready(function (){
     sr.reveal('#about .skillset', {delay: 200});
 
     // Reveal interests
-    sr.reveal('#interests h1', {});
-    sr.reveal('#interests .card', {interval: 200});
+    sr.reveal('#interests h1', {origin: 'top'});
+    sr.reveal('#interests .card', {origin: 'top', interval: 200});
 
     // Reveal get-in-touch
     sr.reveal('#contact h1, #contact p, #contact .btn', {origin: 'top', interval: 100})
