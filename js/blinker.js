@@ -3,13 +3,13 @@ var interval = 250;
 
 $(document).ready(function() {
     setInterval(() => {
-    if(cursor) {
-        document.getElementById('blinker').style.opacity = 0;
-        cursor = false;
-    }
-    else {
-        document.getElementById('blinker').style.opacity = 1;
-        cursor = true;
-    }
-}, interval);
+        if(cursor) {
+            document.getElementById('blinker').style.opacity = 0;
+            cursor = false;
+        }
+        else {
+            document.getElementById('blinker').style.opacity = 1;
+            cursor = true;
+        }
+    }, interval);
 });
