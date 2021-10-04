@@ -24,7 +24,6 @@ $(document).ready(function (){
 
     // Reveal interests
     sr.reveal('#interests h1', {origin: 'top'});
-    sr.reveal('#interests .card', {interval: 200});
 
     // Reveal get-in-touch
     sr.reveal('#contact h1, #contact p, #contact .btn', {origin: 'top', interval: 100})
