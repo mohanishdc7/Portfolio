@@ -14,7 +14,6 @@
 .spinner-wrapper {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +61,12 @@ section {
 @media (min-width: 768px) {
   section {
     height: 90vh;
+  }
+
+
+
+  #projects {
+    height: auto;
   }
 
   #interests {
@@ -282,6 +287,20 @@ h1::selection {
 }
 
 /* -----------interests-------------- */
+.swiper {
+  width: 45%;
+}
+
+.swiper-slide {
+  border-radius: 18px;
+}
+
+.swiper-slide .card{
+  border: 5px solid #7860a8;
+  border-radius: 18px;
+  
+}
+
 #interests .card {
   box-shadow: 5px 5px 25px 1px rgba(206, 206, 206, 0.68);
 }
@@ -335,4 +354,7 @@ h1::selection {
     width: 70%;
   }
 
+  #interests .swiper {
+    width: 70%;
+  }
 }
