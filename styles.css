@@ -13,7 +13,6 @@
 section {
   display: flex;
   align-items: center;
-  translate: middle;
 }
 
 @media (min-width: 768px) {
@@ -31,20 +30,21 @@ h1::selection {
   color: white;
 }
 
-/* .heading span{
+.heading span {
   position: relative;
   border-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .heading span::before {
   content: "";
   position: absolute;
-  width: 100%;
-  left: 0;
+  width: 40%;
+  left: 30%;
   bottom: 0;
   background-color: #5e19e4;
   height: 3px;
-} */
+}
 
 /* -----------navbar------------ */
 .offcanvas-body span {
@@ -69,34 +69,12 @@ h1::selection {
   visibility: visible;
 }
 
-@media (max-width: 768px) {
-  .offcanvas {
-    background-image: linear-gradient(
-      to bottom,
-      #e0d1ff,
-      #cab0fd,
-      #a97ffc,
-      #8147f7
-    );
-  }
-
-  .offcanvas-body a {
-    margin: 15px;
-    font-size: 1.5rem;
-  }
-
-  .offcanvas-body span::before {
-    background-color: white;
-  }
-
-  #showcase .container {
-    margin: 25% 0;
-  }
-}
-
 /* -----------showcase-------------- */
-#showcase img {
-  width: 40%;
+#showcase .img-show{
+  width: 45%;
+  background-color: #5d19e415;
+  border-radius: 51% 66% 62% 47% / 38% 79% 37% 65%;
+  padding-right: 5%;
 }
 
 #showcase h1 {
@@ -127,6 +105,7 @@ h1::selection {
 
 /* -----------about-------------- */
 #about img {
+  border-radius: 5px;
   box-shadow: 5px 0px 25px 0px rgba(51, 1, 80, 0.68);
 }
 
@@ -249,11 +228,21 @@ h1::selection {
   }
 }
 
+/* -----------Projects-------------- */
+#projects .card {
+  box-shadow: 5px 5px 25px 1px rgba(73, 73, 73, 0.68);
+}
+
+#projects a{
+  text-decoration: none;
+}
+
 /* -----------interests-------------- */
-.card {
+#interests .card {
   box-shadow: 5px 5px 25px 1px rgba(206, 206, 206, 0.68);
 }
 
+/* -----------Contact-------------- */
 #contact p {
   margin: 0 20%;
   text-align: center;
@@ -269,9 +258,37 @@ h1::selection {
 
 #social .nav-link:hover,
 .footer .nav-link:hover {
-  border-radius: 50%;
-  box-shadow: 1px 0px 5px 0px rgba(51, 1, 80, 0.68);
-  color: #ffffff;
-  background-color: #5e19e4;
+  transform: translateY(-5px);
   transition: 0.3s;
+  filter: brightness(150%);
+}
+
+@media (max-width: 768px) {
+  .offcanvas {
+    background-image: linear-gradient(
+      to bottom,
+      #e0d1ff,
+      #cab0fd,
+      #a97ffc,
+      #8147f7
+    );
+  }
+
+  .offcanvas-body a {
+    margin: 15px;
+    font-size: 1.5rem;
+  }
+
+  .offcanvas-body span::before {
+    background-color: white;
+  }
+
+  #showcase .container {
+    margin: 25% 0;
+  }
+
+  #showcase .img-show {
+    width: 70%;
+  }
+
 }

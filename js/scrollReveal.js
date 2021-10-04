@@ -16,6 +16,12 @@ $(document).ready(function (){
     sr.reveal('#about h1, #about-info', {origin: 'top', delay: 200});
     sr.reveal('#about .skillset', {delay: 200});
 
+    // Reveal Projects
+    sr.reveal('#projects h1', {origin: 'top'});
+    sr.reveal('#projects .card-1', {origin: 'left', delay: 200});
+    sr.reveal('#projects .card-2', {origin: 'top', delay: 150});
+    sr.reveal('#projects .card-3', {origin: 'right', delay: 200});
+
     // Reveal interests
     sr.reveal('#interests h1', {origin: 'top'});
     sr.reveal('#interests .card', {interval: 200});

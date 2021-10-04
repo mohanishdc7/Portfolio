@@ -16,6 +16,7 @@
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link href="styles.css" rel="stylesheet">
     <script src="./js/main.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
@@ -26,7 +27,6 @@
 </head>
 
 <body>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
         <div class="container px-5">
@@ -48,11 +48,8 @@
                             <a href="#about" class="nav-link"><span>About</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link"><span>Experience</span></a>
+                            <a href="#projects" class="nav-link"><span>Projects</span></a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a href="#skillstart" class="nav-link"><span>Work</span></a>
-                        </li> -->
                         <li class="nav-item">
                             <a href="#interests" class="nav-link"><span>Interests</span></a>
                         </li>
@@ -79,16 +76,14 @@
                     <p>Hi, my name is</p>
                     <h1 class="p-3 p-md-0">Mohanish Chavan</h1>
                     <h3><span id="typewriter"></span><span id="blinker">|</span></h3>
-                    <!-- <p class="my-4">
-                        I'm a Computer Science Student with specialization in Web-Development. Currently, I'm learning
-                        the fundamentals of Data Science with IBM's Watson Studio toolkit and Jupyter Notebooks.
-                    </p> -->
                     <a href="mailto:beingmohanish15@gmail.com" class="btn btn-lg mt-5">
                         <b>Get in touch</b>
                         <i class="bi bi-arrow-right-circle-fill ps-1"></i>
                     </a>
                 </div>
-                <img src="images/showcase.svg" alt="" class="img-fluid ms-5 d-none d-sm-block" />
+                <div class="img-show">
+                    <img src="images/showcase.svg" alt="" class="img-fluid ms-5 d-none d-sm-block" />
+                </div>
             </div>
         </div>
     </section>
@@ -101,7 +96,7 @@
                     <img src="./images/My pic.jpg" alt="" class="img-fluid mx-lg-5">
                 </div>
                 <div class="col-md-7">
-                    <h1 class="pt-5 heading"><span>About Me.</span></h1>
+                    <h1 class="pt-5 heading">About Me.</h1>
                     <p class="py-3" id="about-info">I'm a software professional determined to innovate tools for making
                         the world a
                         better place.
@@ -112,9 +107,6 @@
                         Institute
                         of Information Technology. Apart from building software, I like to play football, read books,
                         and explore the world!
-
-                        <!-- I am an Open Source enthusiast with contributions to orgs. like Kiwix and Openzim, and I was
-                        part of GSOC 2021 under kiwix -->
                     </p>
 
 
@@ -163,13 +155,69 @@
         </div>
     </section>
 
+    <!-- Projects -->
+    <section class="bg-light py-5" id="projects">
+        <div class="container px-lg-5">
+            <h1 class="text-center p-5 heading">
+                <span>Projects</span>
+            </h1>
+            <div class="row g-5 p-4">
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/mohanishdc7/Calci" target="_blank">
+                        <div class="card card-1 p-2 bg-dark text-light">
+                            <div class="card-body">
+                                <p>
+                                    <i class="uil uil-calculator-alt" style="font-size: 3rem; color: #5e19e4;"></i>
+                                    <i class="uil uil-github-alt" style="font-size: 2rem; float: right;"></i>
+                                </p>
+                                <h3>Calci</h3>
+                                <p>A simple and elegant scientific calculator application which can perform basic operations.</p>
+                                <p class="text-secondary">HTML CSS PHP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/mohanishdc7/DAC-FABWELD-SOLUTIONS" target="_blank">
+                        <div class="card card-2 p-2 bg-dark text-light">
+                            <div class="card-body">
+                                <p>
+                                    <i class="uil uil-folder-network" style="font-size: 3rem; color: #5e19e4;"></i>
+                                    <i class="uil uil-github-alt" style="font-size: 2rem; float: right;"></i>
+                                </p>
+                                <h3>DAC</h3>
+                                <p>A static portfolio website displaying services and testimonials of a Welding and Fabrication Consultancy firm.</p>
+                                <p class="text-secondary">HTML CSS Javascript</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="https://github.com/mohanishdc7/news-feed-management" target="_blank">
+                        <div class="card card-3 p-2 bg-dark text-light">
+                            <div class="card-body">
+                                <p>
+                                    <i class="uil uil-newspaper" style="font-size: 3rem; color: #5e19e4;"></i>
+                                    <i class="uil uil-github-alt" style="font-size: 2rem; float: right;"></i>
+                                </p>
+                                <h3>News Portal</h3>
+                                <p>An online news-feed system for system authorised users only where news will be updated dynamically.</p>
+                                <p class="text-secondary">MySQL Node React</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Interests -->
     <section class="bg-light py-5" id="interests">
         <div class="container px-lg-5">
             <h1 class="text-center p-5 heading">
                 <span>Interests</span>
             </h1>
-            <div class="row text-center g-5">
+            <div class="row text-center g-5 p-5 p-md-none">
                 <div class="col-md-4">
                     <div class="card text-dark">
                         <div class="card-body text-center">
@@ -237,7 +285,7 @@
     <!-- Contact -->
     <section class="bg-light py-5" id="contact">
         <div class="container px-lg-5">
-            <h1 class="text-center p-4 heading">
+            <h1 class="text-center p-4">
                 <span>Get in Touch</span>
             </h1>
             <p>
