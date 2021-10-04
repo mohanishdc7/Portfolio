@@ -9,7 +9,8 @@ function include(file) {
     
   }
 
-include("./js//typewriter.js");
+include("./js/load.js");
+include("./js/typewriter.js");
 include("./js/blinker.js");
 include("./js/hover.js");
 include("./js/scrollReveal.js");
