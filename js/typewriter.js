@@ -1,5 +1,5 @@
 // Typewriter Effect
-var text = ["Full Stack Developer             ", "UI/UX Designer     ", "AI Enthusiast    ", "Software Developer"];
+var text = ["Product Management      ", "Venture Captital    ", "Business Development   ", "Management Consultant"];
 var speed = 100;
 var i = 0, k = 0;
 
