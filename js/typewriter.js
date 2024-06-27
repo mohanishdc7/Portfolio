@@ -1,5 +1,5 @@
 // Typewriter Effect
-var text = ["Software Engineering      ", "Quantitative Finance     ", "Product Development   ", "Technology Professional"];
+var text = ["Venture Capital   ", "Strategy Consulting      ", "Quantitative Finance     ", "Product Management   ", "Technology Professional"];
 var speed = 100;
 var i = 0, k = 0;
 
